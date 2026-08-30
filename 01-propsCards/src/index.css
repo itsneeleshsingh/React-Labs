@@ -11,9 +11,9 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 0px 90px 0 90px;
+    padding: 0px 70px 0 70px;
     align-items: center;
-    height: 80px;
+    height: 70px;
     border-bottom: 2px solid rgb(203, 203, 203);
 }
 .navbar .left{
@@ -75,42 +75,130 @@ body{
 
 
 .searchBar{
-    padding: 30px 90px;
+    padding: 16px 10px 8px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    margin-top: 30px;
 }
 
 .searchBar p{
-    font-size: 14px;
+    font-size: 12px;
     color: #4b5563;
     margin: 0;
 }
 
 .searchBar h3{
     margin: 0;
-    font-size: 28px;
+    font-size: 24px;
     color: #111827;
     font-weight: 700;
 }
 
+.sidebar{
+    width: 360px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 14px 18px 18px;
+    background: #f5f5f5;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.backButton {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #1f2937;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+.sidebarTitle {
+    font-size: 26px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 18px;
+}
+
+.searchField {
+    margin-bottom: 12px;
+}
+
+.searchField label {
+    display: block;
+    font-size: 13px;
+    color: #4b5563;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.inputRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f0f0;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    min-height: 46px;
+    padding: 0 12px;
+}
+
+.fieldIcon {
+    font-size: 16px;
+    color: #4b5563;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+
+.fieldValue {
+    font-size: 14px;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.sidebarSearchButton {
+    width: 100%;
+    background: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 14px;
+    transition: all 0.2s ease;
+}
+
+.sidebarSearchButton:hover {
+    background: #1877d2;
+}
+
 /* Hotel Cards */
 .hotelCards{
-    width: 650px;
-    margin: 20px auto;
+    width: 100%;
+    max-width: 660px;
+    flex: 0 0 auto;
+    margin: 0;
     display: flex;
     align-items: center;
     background: #fff;
     border: 1px solid #e7e7e7;
-    border-radius: 20px;
+    border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
 }
 
 .hotelCards .left {
-    width: 260px;
-    height: 220px;
+    width: 220px;
+    height: 188px;
 }
 
 .hotelCards .left img {
@@ -118,27 +206,27 @@ body{
     height: 98%;
     object-fit: cover;
     display: block;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 .hotelCards .right {
     flex: 1;
-    padding: 14px 18px 14px 20px;
+    padding: 12px 16px 12px 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }   
 
 .hotelCards .top h4 {
-    margin: 0 0 6px;
-    font-size: 22px;
+    margin: 0 0 5px;
+    font-size: 18px;
     font-weight: 700;
     color: #1f2937;
 }
 
 .hotelCards .top p {
     margin: 4px 0;
-    font-size: 13px;
+    font-size: 12px;
     color: #4b5563;
 }
 
@@ -146,8 +234,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .hotelCards .leftD p,
@@ -157,14 +245,14 @@ body{
 
 .hotelCards .leftD p:first-child,
 .hotelCards .rightD p:first-child {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     color: #1f2937;
 }
 
 .hotelCards .leftD p:last-child,
 .hotelCards .rightD p:last-child {
-    font-size: 13px;
+    font-size: 11px;
     color: #6b7280;
 }
 
@@ -172,16 +260,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .hotelCards .bottom p {
     display: inline-block;
     background: #eafaf0;
     color: #1c8a45;
-    padding: 6px 12px;
+    padding: 5px 10px;
     border-radius: 999px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     margin: 0;
 }
@@ -191,8 +279,8 @@ body{
     color: white;
     border: none;
     border-radius: 999px;
-    padding: 10px 22px;
-    font-size: 14px;
+    padding: 9px 16px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s ease;
@@ -202,3 +290,21 @@ body{
     background: #137ae8;
 }
 
+.hotelView{
+    width: 1200px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.hotcardView{
+    width: 100%;
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+}
