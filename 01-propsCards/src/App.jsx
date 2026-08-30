@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Navbar from './components/Navbar.jsx'
+import SearchBar from './components/SearchBar.jsx'
+import { HotelCards } from './components/HotelCards.jsx'
 
 const App = () => {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
-      <h1>Counter: {count}</h1>
-      <button onClick={()=>setCount(count+1)}>Click</button>
+      <Navbar/>
+      <SearchBar/>
+      <HotelCards/>
+      <HotelCards/>
+      <HotelCards/>
     </div>
   )
 }

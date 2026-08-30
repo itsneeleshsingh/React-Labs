@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 90px 0 90px;
+    align-items: center;
+    height: 80px;
+    border-bottom: 2px solid rgb(203, 203, 203);
+}
+.navbar .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.navbar .right{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar button{
+    border-radius: 30px;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+.signUp{
+    background-color: #fff;
+    border: 2px solid rgb(14, 144, 225);
+    color: rgb(14, 144, 225);
+}
+.signUp:hover{
+    background-color: rgb(14, 144, 225);
+    color: #fff;
+    transform: translateY(-1px);
+}
+.logIn{
+    background-color: rgb(14, 144, 225);
+    border: 2px solid rgb(14, 144, 225);
+    color: #fff;
+}
+.logIn:hover{
+    background-color: #fff;
+    color: rgb(14, 144, 225);
+    transform: translateY(-1px);
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.navbar li{
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar li:hover{
+    color: rgb(14, 144, 225);
+}
+
+
+.searchBar{
+    padding: 30px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.searchBar p{
+    font-size: 14px;
+    color: #4b5563;
+    margin: 0;
+}
+
+.searchBar h3{
+    margin: 0;
+    font-size: 28px;
+    color: #111827;
+    font-weight: 700;
+}
+
+/* Hotel Cards */
+.hotelCards{
+    width: 650px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    flex-wrap: wrap;
+}
+
+.hotelCards .left {
+    width: 260px;
+    height: 220px;
+}
+
+.hotelCards .left img {
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.hotelCards .right {
+    flex: 1;
+    padding: 14px 18px 14px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}   
+
+.hotelCards .top h4 {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.hotelCards .top p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #4b5563;
+}
+
+.hotelCards .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.hotelCards .leftD p,
+.hotelCards .rightD p {
+    margin: 5px 0;
+}
+
+.hotelCards .leftD p:first-child,
+.hotelCards .rightD p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.hotelCards .leftD p:last-child,
+.hotelCards .rightD p:last-child {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.hotelCards .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.hotelCards .bottom p {
+    display: inline-block;
+    background: #eafaf0;
+    color: #1c8a45;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.hotelCards button {
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hotelCards button:hover {
+    background: #137ae8;
+}
+
