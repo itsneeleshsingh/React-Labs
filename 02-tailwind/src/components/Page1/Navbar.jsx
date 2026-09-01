@@ -3,16 +3,16 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='bg-gray-950 text-white flex items-center justify-between px-15 h-15'>
+    <div className='bg-gray-900 text-white flex backdrop-blur-md items-center justify-between px-15 h-15 shadow-lg'>
         <h3 className='text-2xl font-bold font-mono'>Groovvy</h3>
         <div className="links">
             <ul className='flex gap-8 font-medium uppercase text-gray-300'>
                 <li className='text-sm text-blue-400 font-semibold'>Music</li>
                 <li className='text-sm hover:text-blue-400 transition-colors'>Podcast</li>
                 <li className='text-sm hover:text-blue-400 transition-colors'>Live</li>
-            </ul>   
+            </ul>
         </div>
-        <div className="flex gap-3 bg-gray-900 py-2 px-8 border-1 border-gray-700 rounded-lg">
+        <div className="w-full max-w-xs md:max-w-sm focus-within:ring-2 focus-within:ring-blue-500/50 flex gap-3 bg-gray-900 py-2 px-8 border border-gray-700 rounded-lg">
             <Search/>
             <input type="text" className='border-none focus:outline-none' placeholder='Search any music!'/>
         </div>

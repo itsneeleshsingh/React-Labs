@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Trending from './Trending'
 
 const Page1 = () => {
   return (
-    <div className='bg-gray-900 text-white'>
+    <div>
       <Navbar/>
+      <Trending/>
     </div>
   )
 }
