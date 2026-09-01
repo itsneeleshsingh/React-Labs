@@ -1,10 +1,11 @@
 import React from 'react'
+import Page1 from './components/Page1/page1'
 
 const App = () => {
   return (
     <div>
-      <h1 className='bg-amber-200'>Hello</h1>
-    </div>
+      <Page1/>
+    </div>  
   )
 }
 
