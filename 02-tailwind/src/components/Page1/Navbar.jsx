@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='bg-gray-900 text-white flex backdrop-blur-md items-center justify-between px-15 h-15 shadow-lg'>
+    <div className='sticky top-0 bg-gray-900 text-white flex backdrop-blur-md items-center justify-between px-15 h-15 shadow-lg'>
         <h3 className='text-2xl font-bold font-mono'>Groovvy</h3>
         <div className="links">
             <ul className='flex gap-8 font-medium uppercase text-gray-300'>
