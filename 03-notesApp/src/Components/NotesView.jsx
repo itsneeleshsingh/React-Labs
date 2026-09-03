@@ -1,11 +1,11 @@
 import React from 'react'
 import Card from './Card'
 
-const NotesView = ({userNotes}) => {
+const NotesView = ({userNotes,onDelete}) => {
   return (
     <div className='px-5 flex gap-3 flex-wrap'>
-        {userNotes.map((note)=>{
-            return <Card key={note.date+note.text} note={note}/>
+        {userNotes.map((note,idx)=>{
+            return <Card key={idx} note={note} onDelete={()=>onDelete(idx)}/>
         })}
     </div>
   )

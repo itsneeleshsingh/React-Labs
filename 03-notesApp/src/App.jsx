@@ -21,13 +21,19 @@ const App = () => {
     setUserNotes(currNotes);
   };
 
+  const deleteNote = (idx)=>{
+    setUserNotes((curr)=>{
+      return curr.filter((_,index)=>index!==idx);
+    })
+  };
+
   return (
     <div className='flex min-h-screen'>
       <Sidebar onAddClick={()=>setIsFormOpen(true)}/>
       <main className='flex min-w-0 flex-1 flex-col gap-4'>
         <TopBar/>
         <div className="flex justify-center px-4 text-center sm:justify-start sm:px-0 sm:text-left">
-          <NotesView userNotes={userNotes}/>
+          <NotesView userNotes={userNotes} onDelete={deleteNote}/>
         </div>
       </main>
 
