@@ -7,6 +7,7 @@ import NotesForm from './Components/NotesForm'
 const App = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [userNotes, setUserNotes] = useState([]);
+  const [search, setSearch] = useState('')
 
   const colors = ['bg-amber-400', 'bg-blue-400', 'bg-green-400', 'bg-pink-400']
 
@@ -31,9 +32,9 @@ const App = () => {
     <div className='flex min-h-screen'>
       <Sidebar onAddClick={()=>setIsFormOpen(true)}/>
       <main className='flex min-w-0 flex-1 flex-col gap-4'>
-        <TopBar/>
+        <TopBar search={search} setSearch={setSearch}/>
         <div className="flex justify-center px-4 text-center sm:justify-start sm:px-0 sm:text-left">
-          <NotesView userNotes={userNotes} onDelete={deleteNote}/>
+          <NotesView userNotes={userNotes} onDelete={deleteNote} search={search}/>
         </div>
       </main>
 

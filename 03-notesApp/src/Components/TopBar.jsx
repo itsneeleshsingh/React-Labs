@@ -1,13 +1,16 @@
 import { Search } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
 
-const TopBar = () => {
+const TopBar = ({search,setSearch}) => {
+    
   return (
     <div className='flex px-10 py-5 flex-col gap-5'>
         <div className='ml-1 lg:ml-10'>
             <div className='flex items-center text-gray-600'>
                 <Search size={20}/>
                 <input 
+                    value={search}
+                    onChange={(e)=>setSearch(e.target.value)}
                     className='px-3 py-1 outline-none'
                     type="text" placeholder='Search Notes'
                 />
